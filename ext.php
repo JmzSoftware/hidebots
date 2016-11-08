@@ -7,7 +7,7 @@
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
-namespace rmcgirr83\hidebots;
+namespace jmz\hidebots;
 
 /**
 * Extension class for custom enable/disable/purge actions
@@ -26,7 +26,7 @@ class ext extends \phpbb\extension\base
 		if (!$enableable)
 		{
 			$user = $this->container->get('user');
-			$user->add_lang_ext('rmcgirr83/hidebots', 'common');
+			$user->add_lang_ext('jmz/hidebots', 'common');
 			trigger_error($user->lang('HIDEBOTS_REQUIRE_3.1.7'), E_USER_WARNING);
 		}
 
